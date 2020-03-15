@@ -1,0 +1,102 @@
+@import url('calluna-font/stylesheet.css');
+
+::selection {
+  background: #171717;
+  color: #fff;
+}
+
+body {
+  background-color: #F9F7EE;
+  font-family: 'Calluna';
+  color: #171717;
+}
+
+.mainContainer {
+  margin: 32px;
+}
+
+img {
+  width: 100%;
+  max-width: 400px !important;
+}
+
+.headline {
+  margin-top: 32px;
+  margin-bottom: 0px;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.copy {
+  margin-top: 32px;
+  font-size: 22px;
+  line-height: 30px;
+  max-width: 650px;
+}
+
+.link {
+  text-decoration: none;
+  background-image: linear-gradient(#FF906B, #FF906B);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 15%;
+  transition: background-size 150ms ease-in-out;
+  padding-bottom: 0em;
+  display: inline;
+  cursor: pointer;
+  color: #171717;
+}
+
+.link:visited {
+  color: #171717;
+}
+
+.link:hover {
+  background-size: 100% 100%
+}
+
+@media screen and (min-width: 1210px) {
+  .mainContainer {
+    margin: 48px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .headline {
+    font-size: 38px;
+  }
+}
+
+
+
+
+
+
+/* ------------------------ */
+/* Reset */
+/* ------------------------ */
+
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

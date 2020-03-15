@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="286px" height="286px" viewBox="0 0 286 286" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 3</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-32.000000, -32.000000)">
+            <g id="Group-3" transform="translate(32.000000, 32.000000)">
+                <rect id="Rectangle" fill="#191919" x="0" y="0" width="286" height="286"></rect>
+                <g id="Grouped-Shapes" transform="translate(16.000000, 16.000000)">
+                    <g id="Half-Circle" transform="translate(127.000000, 62.000000)" fill="#FF906B">
+                        <path d="M63.5,0 C98.5700816,0 127,29.5492065 127,66 L127,66 L0,66 L0.00850718576,64.9085693 C0.569262384,28.9611773 28.7806192,0 63.5,0 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Half-Circle" transform="translate(63.500000, 160.000000) scale(1, -1) translate(-63.500000, -160.000000) translate(0.000000, 127.000000)" fill="#FF906B">
+                        <path d="M63.5,0 C98.5700816,0 127,29.5492065 127,66 L127,66 L0,66 L0.00850718576,64.9085693 C0.569262384,28.9611773 28.7806192,0 63.5,0 Z" id="Combined-Shape"></path>
+                    </g>
+                    <g id="Combo-">
+                        <rect id="Square" fill="#FFC7B3" x="0" y="0" width="127" height="127"></rect>
+                        <path d="M94,30.5 C129.070082,30.5 157.5,60.0492065 157.5,96.5 L157.5,96.5 L30.5,96.5 L30.5085072,95.4085693 C31.0692624,59.4611773 59.2806192,30.5 94,30.5 Z" id="Half-Circle" fill-opacity="0.75" fill="#FF906B" transform="translate(94.000000, 63.500000) rotate(-90.000000) translate(-94.000000, -63.500000) "></path>
+                    </g>
+                    <g id="Combo-" transform="translate(127.000000, 127.000000)">
+                        <rect id="Square" fill="#FFC7B3" x="0" y="0" width="127" height="127"></rect>
+                        <path d="M94,30.5 C129.070082,30.5 157.5,60.0492065 157.5,96.5 L157.5,96.5 L30.5,96.5 L30.5085072,95.4085693 C31.0692624,59.4611773 59.2806192,30.5 94,30.5 Z" id="Half-Circle" fill-opacity="0.75" fill="#FF906B" transform="translate(94.000000, 63.500000) rotate(-90.000000) translate(-94.000000, -63.500000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
