@@ -61,17 +61,6 @@ img {
   }
 }
 
-@media screen and (max-width: 650px) {
-  .headline {
-    font-size: 38px;
-  }
-}
-
-
-
-
-
-
 /* ------------------------ */
 /* Reset */
 /* ------------------------ */
