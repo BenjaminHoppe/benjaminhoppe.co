@@ -64,7 +64,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .link:hover {
-    background-size: unset;
+    background-size: 100% 15%;
   }
 }
 
