@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Benjamin Hoppe | UI/UX Designer & Front-end Developer</title>
   <link rel="stylesheet" href="/assets/styles.css">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
@@ -21,6 +20,12 @@ Some area’s that interest me include creative storytelling, design systems, di
     </p>
   </div>
 </body>
+<script>
+  // Changes title in tabar when window is innactive
+  window.onblur = function () { document.title = 'Was it something I said?'; }
+
+  window.onfocus = function () { document.title = 'Benjamin Hoppe | UI/UX Designer & Front-end Developer'; }
+</script>
 </html>
 
 
