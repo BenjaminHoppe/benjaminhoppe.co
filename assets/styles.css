@@ -52,12 +52,19 @@ img {
 }
 
 .link:hover {
-  background-size: 100% 100%
+  background-size: 100% 100%;
+  transition: background-size 150ms ease-in-out;
 }
 
 @media screen and (min-width: 1210px) {
   .mainContainer {
     margin: 48px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .link:hover {
+    background-size: unset;
   }
 }
 
@@ -89,3 +96,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
