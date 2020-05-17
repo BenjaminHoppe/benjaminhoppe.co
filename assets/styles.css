@@ -1,13 +1,13 @@
 @import url('calluna-font/stylesheet.css');
-
+@import url('px-grotesk-font/stylesheet.css');
 ::selection {
   background: #171717;
   color: #fff;
 }
 
 body {
-  background-color: #F9F7EE;
-  font-family: 'Calluna';
+  background-color: #f3f1ed;
+  font-family: 'Px Grotesk';
   color: #171717;
 }
 
@@ -25,6 +25,7 @@ img {
   margin-bottom: 0px;
   font-size: 50px;
   line-height: 1;
+  font-weight: normal;
 }
 
 .copy {
@@ -96,4 +97,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
