@@ -1,9 +1,11 @@
 @import url('calluna-font/stylesheet.css');
 @import url('px-grotesk-font/stylesheet.css');
-::selection {
+/* ::selection {
   background: #171717;
   color: #fff;
-}
+} */
+
+
 
 :root {
   /* Grey  */
@@ -18,7 +20,6 @@
   --dark-text: #ffffff;
   --dark-bg: #000000;
 }
-
 
 body {
   font-family: 'Px Grotesk';
