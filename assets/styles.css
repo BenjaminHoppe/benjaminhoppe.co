@@ -5,69 +5,234 @@
   color: #fff;
 }
 
-body {
-  background-color: #f3f1ed;
-  font-family: 'Px Grotesk';
-  color: #171717;
+:root {
+  /* Grey  */
+--grey-text: #A9A9A9;
+
+  /* Light mode */
+  --light-text: #000000;
+  --light-bg: #ffffff;
+
+
+  /* Dark mode */
+  --dark-text: #ffffff;
+  --dark-bg: #000000;
 }
+
+
+body {
+  font-family: 'Px Grotesk';
+  background-color: var(--light-bg);
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+}
+
+.darkMode {
+  background-color: var(--bg-color);
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+}
+
 
 .mainContainer {
-  margin: 32px;
+    padding: 0px 172px;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content auto auto;
 }
 
-img {
-  width: 100%;
-  max-width: 400px !important;
-}
-
-.headline {
-  margin-top: 32px;
-  margin-bottom: 0px;
-  font-size: 50px;
-  line-height: 1;
-  font-weight: normal;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+  grid-column: 1 / 2;
+  grid-row: 1 / 1;
 }
 
 .copy {
-  margin-top: 32px;
-  font-size: 22px;
-  line-height: 30px;
-  max-width: 650px;
+  font-size: 16px;
+  color: var(--text-color)
 }
 
-.link {
+.name {
+  opacity: 1;
+  transition: opacity 0.4s;
+    color: var(--text-color)
+}
+
+.name:hover {
+  opacity: 0.5;
+  transition: opacity: 0.4s;
+}
+
+.toggle {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  border: 2px solid var(--text-color);
+  cursor: pointer;
+}
+
+.content {
+    margin-top: 96px;
+    max-width: 930px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 154px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+}
+
+.heading {
+  grid-column: 1 / 3;
+  grid-row: 1 / 1;
+  font-size: 48px;
+  font-weight: normal;
+  color: var(--text-color)
+}
+
+.sub-heading {
+  color: var(--grey-text);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.skills-focus, .areas-of-interest {
+  margin-top: 128px;
+}
+
+.skills-focus {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.areas-of-interest {
+  justify-self: end;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+a, .mero, .social-link {
   text-decoration: none;
-  background-image: linear-gradient(#FF906B, #FF906B);
+  color: var(--text-color);
+}
+
+a:visited, .mero:visited, social-link:visited {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: underline 0.4s;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  transition: underline 0.4s;
+}
+
+.mero {
+  text-decoration: none;
+  background-image: linear-gradient(var(--text-color), var(--text-color));
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 15%;
-  transition: background-size 150ms ease-in-out;
+  background-size: 100% 6%;
+  transition: background-size 250ms ease-in-out;
   padding-bottom: 0em;
   display: inline;
   cursor: pointer;
-  color: #171717;
+  color: var(--bg-color);
 }
 
-.link:visited {
-  color: #171717;
-}
-
-.link:hover {
+.mero:hover {
   background-size: 100% 100%;
-  transition: background-size 150ms ease-in-out;
+  transition: background-size 250ms ease-in-out;
+  color: var(--bg-color);
 }
 
-@media screen and (min-width: 1210px) {
+.mero:visited {
+  color: var(--text-color);
+}
+
+.mero:visited:hover {
+  color: var(--bg-color);
+}
+
+footer {
+  margin-bottom: 64px;
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 2;
+  grid-row: 3 / 3;
+  align-self: end;
+}
+
+.socials {
+  display: flex;
+}
+
+.social-link {
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 1048px) {
   .mainContainer {
-    margin: 48px;
+    padding: 0 86px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .link:hover {
-    background-size: 100% 15%;
+@media screen and (max-width: 670px) {
+
+  .header{
+    margin-top: 48px;
+    /* padding: 0px 24px; */
   }
+
+  .name:hover {
+    opacity: 1;
+  }
+
+  .mainContainer {
+    padding: 0px 24px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .content {
+    margin: 88px 0;
+    grid-template-columns: 1fr;
+  }
+  .mero:hover, .mero:visited:hover  {
+    background-size: 100% 6%;
+    color: var(--text-light);
+  }
+
+  .areas-of-interest {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    justify-self: start;
+  }
+
+  .skills-focus, .areas-of-interest {
+    margin-top:  48px;
+  }
+
+  footer {
+    margin-bottom: 48px;
+  }
+
+  .social-link:hover {
+    text-decoration: none;
+  }
+
 }
+
+
+
 
 /* ------------------------ */
 /* Reset */
@@ -87,13 +252,4 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }

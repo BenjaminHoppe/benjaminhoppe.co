@@ -11,21 +11,71 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
-  <div class="mainContainer">
-    <img src="assets/shapes.svg" />
-    <p class="headline">Hey, I’m Ben, a designer and</br> front-end developer from Toronto.</p>
-    <p class="copy">
-      I’m currently designing the future of building managment at <a class="link" target="_blank" href="https://mero.co">Mero</a>. Previously, I was a designer & front-end developer at a pre-launch startup in the dating space building out a web based video speed dating app.
-    </br>
-    </br>
-Some area’s that interest me include creative storytelling, design systems, digital minimalism, personal finance, and the future of health. You can check out some of my selected work on <a class="link" target="_blank" href="https://dribbble.com/benjaminhoppe">Dribbble</a>.
-    </br>
-    </br>
-      I’m always looking to make new friends so say hi on <a class="link" target="_blank" href="https://twitter.com/mrbenjaminhoppe">Twitter</a> or send me an <a class="link" href="mailto:benjamin@benjaminhoppe.co">email</a> and lets chat.                                                                          
-    </p>
-  </div>
+
+  <main class="mainContainer">
+    <header class="header">
+      <p class="copy"><a class="name" href="/">Benjamin Hoppe</a></p>
+      <span class="toggle" onclick="toggleMode()"></span>
+    </header>
+    <div class="content">
+      <h1 class="heading">Hey, I’m Ben, a product designer currentley building <a class="mero" target="_blank" href="https://mero.co">Mero</a>.</h1>
+
+      <div class="skills-focus">
+        <p class="sub-heading">Skills and Focus</p>
+        <p class="copy">Art Direction</p>
+        <br>
+        <p class="copy">Branding</p>
+        <br>
+        <p class="copy">Interface Design</p>
+        <br>
+        <p class="copy">User Expierence</p>
+        <br>
+        <p class="copy">Web Design</p>
+        <br>
+        <p class="copy">Front-end Web Development</p>
+      </div>
+
+      <div class="areas-of-interest">
+          <p class="sub-heading">Areas of Interest</p>
+          <p class="copy">Health tech</p>
+          <br>
+          <p class="copy">Minimalism</p>
+          <br>
+          <p class="copy">Monitization</p>
+          <br>
+          <p class="copy">Personal Finace</p>
+          <br>
+          <p class="copy">Remote Work</p>
+          <br>
+          <p class="copy">SwiftUI</p>
+      </div>
+    </div>
+
+
+
+  <footer>
+    <div class="socials">
+      <p class="copy"><a class="social-link" target="_blank" href="https://twitter.com/mrbenjaminhoppe">Tw</a></p>
+
+      <p class="copy"><a class="social-link" target="_blank" href="https://dribbble.com/benjaminhoppe">Dr</a></p>
+
+      <p class="copy"><a class="social-link" target="_blank" href="https://www.linkedin.com/in/mrbenjaminhoppe/">Li</a></p>
+
+    </div>
+
+      <a class="social-link" href="mailto:benjamin@benjaminhoppe.co">Email me</a>
+  </footer>
+    </main>
 </body>
+
+
 <script>
+function toggleMode() {
+  var element = document.body;
+  element.classList.toggle("darkMode");
+  console.log("click")
+}
+
   // Changes title in tabar when window is innactive
   window.onblur = function () { document.title = 'Was it something I said?'; }
 
