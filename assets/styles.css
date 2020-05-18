@@ -1,8 +1,23 @@
 @import url('calluna-font/stylesheet.css');
 @import url('px-grotesk-font/stylesheet.css');
 
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Colors */
 :root {
   /* Grey  */
 --grey-text: #A9A9A9;
@@ -22,8 +37,6 @@ body {
   background-color: var(--light-bg);
   --text-color: var(--light-text);
   --bg-color: var(--light-bg);
-
-
 }
 
 .darkMode {
@@ -32,8 +45,7 @@ body {
   --bg-color: var(--dark-bg);
 }
 
-
-.mainContainer {
+.main-container {
     padding: 0px 172px;
     min-height: 100vh;
     display: grid;
@@ -58,7 +70,7 @@ body {
 .name {
   opacity: 1;
   transition: opacity 0.4s;
-    color: var(--text-color)
+  color: var(--text-color)
 }
 
 .name:hover {
@@ -75,13 +87,13 @@ body {
 }
 
 .content {
-    margin-top: 96px;
-    max-width: 930px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 154px;
-    grid-column: 1 / 2;
-    grid-row: 2 / 2;
+  margin-top: 96px;
+  max-width: 930px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 154px;
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
 }
 
 .heading {
@@ -115,18 +127,18 @@ body {
   grid-row: 2 / 2;
 }
 
-a, .mero, .social-link {
+a, .mero, .social-link, .email {
   text-decoration: none;
   color: var(--text-color);
 }
 
-a:visited, .mero:visited, social-link:visited {
+a:visited, .mero:visited, social-link:visited, .email:visited {
   text-decoration: none;
   color: var(--text-color);
   transition: underline 0.4s;
 }
 
-.social-link:hover {
+.social-link:hover, .email:hover {
   text-decoration: underline;
   transition: underline 0.4s;
 }
@@ -176,23 +188,17 @@ footer {
 }
 
 @media screen and (max-width: 1048px) {
-  .mainContainer {
+  .main-container {
     padding: 0 86px;
   }
 }
 
 @media screen and (max-width: 670px) {
-
-  .header{
-    /* margin-top: 48px; */
-    /* padding: 0px 24px; */
-  }
-
   .name:hover {
     opacity: 1;
   }
 
-  .mainContainer {
+  .main-container {
     padding: 0px 24px;
   }
 
@@ -203,10 +209,6 @@ footer {
   .content {
     margin: 88px 0;
     grid-template-columns: 1fr;
-  }
-
-  .mero {
-
   }
 
   .mero:hover, .mero:visited:hover  {
@@ -224,35 +226,7 @@ footer {
     margin-top:  48px;
   }
 
-  footer {
-    /* margin-bottom: 48px; */
-  }
-
-  .social-link:hover {
+  .social-link:hover, .email:hover {
     text-decoration: none;
   }
-
-}
-
-
-
-
-/* ------------------------ */
-/* Reset */
-/* ------------------------ */
-
-
-html {
-  box-sizing: border-box;
-  font-size: 16px;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
 }
