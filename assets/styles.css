@@ -142,7 +142,6 @@ a:visited, .mero:visited, social-link:visited {
   padding-bottom: 0em;
   display: inline;
   cursor: pointer;
-  color: var(--bg-color);
 }
 
 .mero:hover {
@@ -206,6 +205,11 @@ footer {
     margin: 88px 0;
     grid-template-columns: 1fr;
   }
+
+  .mero {
+
+  }
+
   .mero:hover, .mero:visited:hover  {
     background-size: 100% 6%;
     color: var(--text-light);
