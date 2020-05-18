@@ -1,9 +1,5 @@
 @import url('calluna-font/stylesheet.css');
 @import url('px-grotesk-font/stylesheet.css');
-/* ::selection {
-  background: #171717;
-  color: #fff;
-} */
 
 
 
@@ -26,6 +22,8 @@ body {
   background-color: var(--light-bg);
   --text-color: var(--light-text);
   --bg-color: var(--light-bg);
+
+
 }
 
 .darkMode {
@@ -186,7 +184,7 @@ footer {
 @media screen and (max-width: 670px) {
 
   .header{
-    margin-top: 48px;
+    /* margin-top: 48px; */
     /* padding: 0px 24px; */
   }
 
@@ -227,7 +225,7 @@ footer {
   }
 
   footer {
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
   }
 
   .social-link:hover {
