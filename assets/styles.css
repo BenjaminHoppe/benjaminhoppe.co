@@ -17,7 +17,6 @@
   --dark-theme: #bd93f9;
 
   /* Grey  */
-
 --grey-text: #A9A9A9;
   /* Tomato mode */
 
@@ -29,10 +28,6 @@
   --bg-color: var(--light-bg);
   --theme-color: var(--light-theme); */
 }
-
-
-
-
 
 body {
   background-color: #fff;
@@ -48,6 +43,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: max-content auto auto
 }
 
 .header {
@@ -82,7 +78,6 @@ body {
     grid-row: 2 / 2;
 }
 
-
 .heading {
   grid-column: 1 / 3;
   grid-row: 1 / 1;
@@ -106,7 +101,6 @@ body {
   grid-column: 1 / 1;
   grid-row: 2 / 2;
 }
-
 
 .areas-of-interest {
   justify-self: end;
@@ -157,15 +151,6 @@ a:visited, .mero:visited, social-link:visited, .email:visited {
   color: #fff;
 }
 
-.socials {
-  display: flex;
-}
-
-.social-link {
-  margin-right: 32px;
-}
-
-
 footer {
   margin-bottom: 64px;
   margin-top: auto;
@@ -176,7 +161,20 @@ footer {
   align-self: end;
 }
 
+.socials {
+  display: flex;
+}
 
+.social-link {
+  margin-right: 32px;
+}
+
+@media screen and (max-width: 1048px) {
+  .mainContainer {
+    padding: 0 86px;
+    /* max-width: 700px; */
+  }
+}
 
 @media screen and (max-width: 768px) {
   .link:hover {
