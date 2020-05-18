@@ -20,7 +20,7 @@
   <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
-<body>
+<body class="preload">
 
   <main class="main-container">
     <header class="header">
@@ -85,6 +85,10 @@ function toggleMode() {
   element.classList.toggle("darkMode");
   console.log("click")
 }
+
+$(window).load(function() {
+  $("body").removeClass("preload");
+});
 
   // Changes title in tabar when window is innactive
   // window.onblur = function () { document.title = 'Was it something I said?'; }
