@@ -5,57 +5,106 @@
   color: #fff;
 }
 
+:root {
+  /* Light mode */
+  --light-text: #000000;
+  --light-bg: #ffffff;
+
+
+  /* Dark mode */
+  --dark-text: #ffffff;
+  --dark-bg: #000000;
+  --dark-theme: #bd93f9;
+
+  /* Grey  */
+
+--grey-text: #A9A9A9;
+  /* Tomato mode */
+
+  /* Default mode */
+  /* --switch-shadow-color: var(--light-switch-shadow);
+  --switch-icon: var(--light-switch-icon);
+  --switch-text: var(--light-switch-text);
+  --text-color: var(--light-text);
+  --bg-color: var(--light-bg);
+  --theme-color: var(--light-theme); */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+
+
+.copy {
+
+}
+
+.toggle {
+  height: 16px;
+  width: 16px;
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
 body {
-  background-color: #f3f1ed;
+  background-color: #fff;
   font-family: 'Px Grotesk';
-  color: #171717;
+  color: #000;
+  padding: 0px 172px;
 }
 
 .mainContainer {
-  margin: 32px;
+    padding: 0px 172px;
 }
 
-img {
-  width: 100%;
-  max-width: 400px !important;
-}
 
 .headline {
-  margin-top: 32px;
-  margin-bottom: 0px;
-  font-size: 50px;
-  line-height: 1;
+  margin-top: 96px;
+  font-size: 48px;
   font-weight: normal;
+  max-width: 955px;
 }
 
-.copy {
+/* .copy {
   margin-top: 32px;
   font-size: 22px;
   line-height: 30px;
   max-width: 650px;
-}
+} */
 
-.link {
+.mero {
   text-decoration: none;
-  background-image: linear-gradient(#FF906B, #FF906B);
+  background-image: linear-gradient(#000, #000);
   background-position: 100% 100%;
   background-repeat: no-repeat;
-  background-size: 100% 15%;
+  background-size: 100% 6%;
   transition: background-size 150ms ease-in-out;
   padding-bottom: 0em;
   display: inline;
   cursor: pointer;
-  color: #171717;
+  color: #000;
 }
 
-.link:visited {
-  color: #171717;
-}
-
-.link:hover {
+.mero:hover {
   background-size: 100% 100%;
   transition: background-size 150ms ease-in-out;
+  color: #fff;
 }
+
+.mero:visited {
+  color: #000;
+}
+
+.mero:visited:hover {
+  color: #fff;
+}
+
+
+
+
 
 @media screen and (min-width: 1210px) {
   .mainContainer {
