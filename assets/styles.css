@@ -6,6 +6,9 @@
 }
 
 :root {
+  /* Grey  */
+--grey-text: #A9A9A9;
+
   /* Light mode */
   --light-text: #000000;
   --light-bg: #ffffff;
@@ -14,28 +17,26 @@
   /* Dark mode */
   --dark-text: #ffffff;
   --dark-bg: #000000;
-  --dark-theme: #bd93f9;
 
-  /* Grey  */
---grey-text: #A9A9A9;
-  /* Tomato mode */
-
-  /* Default mode */
-  /* --switch-shadow-color: var(--light-switch-shadow);
-  --switch-icon: var(--light-switch-icon);
-  --switch-text: var(--light-switch-text);
-  --text-color: var(--light-text);
-  --bg-color: var(--light-bg);
-  --theme-color: var(--light-theme); */
+/* Default mode */
+--text-color: var(--light-text);
+--bg-color: var(--light-bg);
 }
 
 body {
-  background-color: #fff;
   font-family: 'Px Grotesk';
-  color: #000;
-
+  background-color: var(--light-bg)
+  color: var(--light-text);
 
 }
+
+.darkMode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  --text-color: var(--dark-text);
+  --bg-color: var(--dark-bg);
+}
+
 
 
 .mainContainer {
@@ -43,7 +44,7 @@ body {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: max-content auto auto
+    grid-template-rows: max-content auto auto;
 }
 
 .header {
@@ -51,13 +52,13 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-top: 64px;
+  /* padding: 0px 172px; */
   grid-column: 1 / 2;
   grid-row: 1 / 1;
 }
 
 .copy {
   font-size: 16px;
-  color: var(--light-text);
 }
 
 .name {
@@ -74,7 +75,8 @@ body {
   height: 16px;
   width: 16px;
   border-radius: 8px;
-  border: 2px solid #000000;
+  border: 2px solid var(--text-color);
+  cursor: pointer;
 }
 
 .content {
@@ -119,12 +121,12 @@ body {
 
 a, .mero, .social-link {
   text-decoration: none;
-  color: var(--light-text)
+  color: var(--text-color);
 }
 
 a:visited, .mero:visited, social-link:visited {
   text-decoration: none;
-  color: var(--light-text);
+  color: var(--text-color);
   transition: underline 0.4s;
 }
 
@@ -188,6 +190,7 @@ footer {
 
   .header{
     margin-top: 48px;
+    /* padding: 0px 24px; */
   }
 
   .name:hover {
