@@ -60,6 +60,16 @@ body {
   color: var(--light-text);
 }
 
+.name {
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+.name:hover {
+  opacity: 0.5;
+  transition: opacity: 0.4s;
+}
+
 .toggle {
   height: 16px;
   width: 16px;
@@ -72,7 +82,6 @@ body {
     max-width: 930px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2;
     margin-bottom: 154px;
     grid-column: 1 / 2;
     grid-row: 2 / 2;
@@ -130,7 +139,7 @@ a:visited, .mero:visited, social-link:visited, .email:visited {
   background-position: 100% 100%;
   background-repeat: no-repeat;
   background-size: 100% 6%;
-  transition: background-size 150ms ease-in-out;
+  transition: background-size 250ms ease-in-out;
   padding-bottom: 0em;
   display: inline;
   cursor: pointer;
@@ -139,7 +148,7 @@ a:visited, .mero:visited, social-link:visited, .email:visited {
 
 .mero:hover {
   background-size: 100% 100%;
-  transition: background-size 150ms ease-in-out;
+  transition: background-size 250ms ease-in-out;
   color: #fff;
 }
 
@@ -172,14 +181,46 @@ footer {
 @media screen and (max-width: 1048px) {
   .mainContainer {
     padding: 0 86px;
-    /* max-width: 700px; */
   }
 }
 
-@media screen and (max-width: 768px) {
-  .link:hover {
-    background-size: 100% 15%;
+@media screen and (max-width: 670px) {
+
+  .header{
+    margin-top: 48px;
   }
+
+  .mainContainer {
+    padding: 0px 24px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .content {
+    margin: 88px 0;
+    grid-template-columns: 1fr;
+  }
+  .mero:hover, .mero:visited:hover  {
+    background-size: 100% 6%;
+    color: var(--text-light);
+  }
+
+  .areas-of-interest {
+    grid-column: 1 / 1;
+    grid-row: 3 / 3;
+    justify-self: start;
+  }
+
+  .skills-focus, .areas-of-interest {
+    margin-top:  48px;
+  }
+
+  footer {
+    margin-bottom: 48px;
+  }
+
 }
 
 
@@ -203,13 +244,4 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
