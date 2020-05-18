@@ -117,18 +117,18 @@ body {
   grid-row: 2 / 2;
 }
 
-a, .mero, .social-link, .email {
+a, .mero, .social-link {
   text-decoration: none;
   color: var(--light-text)
 }
 
-a:visited, .mero:visited, social-link:visited, .email:visited {
+a:visited, .mero:visited, social-link:visited {
   text-decoration: none;
   color: var(--light-text);
   transition: underline 0.4s;
 }
 
-.social-link:hover, .email:hover {
+.social-link:hover {
   text-decoration: underline;
   transition: underline 0.4s;
 }
@@ -190,6 +190,10 @@ footer {
     margin-top: 48px;
   }
 
+  .name:hover {
+    opacity: 1;
+  }
+
   .mainContainer {
     padding: 0px 24px;
   }
@@ -219,6 +223,10 @@ footer {
 
   footer {
     margin-bottom: 48px;
+  }
+
+  .social-link:hover {
+    text-decoration: none;
   }
 
 }
