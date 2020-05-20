@@ -80,15 +80,17 @@
 
 
 <script>
-function toggleMode() {
+
+const toggleMode = () => {
   var element = document.body;
   element.classList.toggle("darkMode");
   console.log("click")
 }
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+window.addEventListener("load", () => {
+  document.body.classList.remove("preload")
+})
+
 
   // Changes title in tabar when window is innactive
   // window.onblur = function () { document.title = 'Was it something I said?'; }
