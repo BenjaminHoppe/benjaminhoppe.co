@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-166988507-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166988507-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-166988507-1');
-</script>
+    gtag('config', 'UA-166988507-1');
+  </script>
   <meta charset="utf-8">
   <link rel="stylesheet" href="/assets/styles.css">
   <meta property="og:image" content="assets/hero.png">
@@ -20,6 +21,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Benjamin Hoppe</title>
 </head>
+
 <body class="preload">
 
   <main class="main-container">
@@ -28,7 +30,8 @@
       <span class="toggle" onclick="toggleMode()"></span>
     </header>
     <div class="content">
-      <h1 class="heading">Hey, I’m Ben, a product designer currently building <a class="mero" target="_blank" href="https://mero.co">Mero</a>.</h1>
+      <h1 class="heading">Hey, I’m Ben, a product designer currently building <a class="mero" target="_blank"
+          href="https://mero.co">Mero</a>.</h1>
 
       <div class="skills-focus">
         <p class="sub-heading">Skills and Focus</p>
@@ -46,56 +49,70 @@
       </div>
 
       <div class="areas-of-interest">
-          <p class="sub-heading">Areas of Interest</p>
-          <p class="copy">Health tech</p>
-          <br>
-          <p class="copy">Minimalism</p>
-          <br>
-          <p class="copy">Monetization</p>
-          <br>
-          <p class="copy">Personal Finance</p>
-          <br>
-          <p class="copy">Remote Work</p>
-          <br>
-          <p class="copy">SwiftUI</p>
+        <p class="sub-heading">Areas of Interest</p>
+        <p class="copy">Health tech</p>
+        <br>
+        <p class="copy">Minimalism</p>
+        <br>
+        <p class="copy">Monetization</p>
+        <br>
+        <p class="copy">Personal Finance</p>
+        <br>
+        <p class="copy">Remote Work</p>
+        <br>
+        <p class="copy">SwiftUI</p>
       </div>
     </div>
 
 
 
-  <footer>
-    <div class="socials">
-      <p class="copy"><a class="social-link" target="_blank" href="https://twitter.com/mrbenjaminhoppe">Tw</a></p>
+    <footer>
+      <div class="socials">
+        <p class="copy"><a class="social-link" target="_blank" href="https://twitter.com/mrbenjaminhoppe">Tw</a></p>
 
-      <p class="copy"><a class="social-link" target="_blank" href="https://dribbble.com/benjaminhoppe">Dr</a></p>
+        <p class="copy"><a class="social-link" target="_blank" href="https://dribbble.com/benjaminhoppe">Dr</a></p>
 
-      <p class="copy"><a class="social-link" target="_blank" href="https://www.linkedin.com/in/mrbenjaminhoppe/">Li</a></p>
+        <p class="copy"><a class="social-link" target="_blank"
+            href="https://www.linkedin.com/in/mrbenjaminhoppe/">Li</a></p>
 
-    </div>
+      </div>
 
       <a class="email" href="mailto:benjamin@benjaminhoppe.co">Email me</a>
-  </footer>
-    </main>
+    </footer>
+  </main>
 </body>
 
 
 <script>
-function toggleMode() {
-  var element = document.body;
-  element.classList.toggle("darkMode");
-  console.log("click")
-}
 
-$(window).load(function() {
-  $("body").removeClass("preload");
-});
+  const toggleMode = () => {
+    let element = document.body;
+    if (element.classList.contains("darkMode")) {
+      element.classList.add("lightMode")
+      element.classList.remove("darkMode")
+    } else {
+      element.classList.add("darkMode")
+      element.classList.remove("lightMode")
+    }
+  }
+
+  const autoDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
+
+  if ("addEventListener" in autoDarkMode) {
+    autoDarkMode.addEventListener('change', e => {
+      document.body.classList.remove("darkMode")
+      document.body.classList.remove("lightMode")
+    });
+  }
+
+  window.addEventListener("load", () => {
+    document.body.classList.remove("preload")
+  })
 
   // Changes title in tabar when window is innactive
   // window.onblur = function () { document.title = 'Was it something I said?'; }
   //
   // window.onfocus = function () { document.title = 'Benjamin Hoppe | UI/UX Designer & Front-end Developer'; }
 </script>
+
 </html>
-
-
-<a class="link" href="https://"> </a>
