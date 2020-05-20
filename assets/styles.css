@@ -28,9 +28,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 :root {
   /* Grey  */
 --grey-text: #A9A9A9;
-  /* Dark mode */
-  --dark-background: #000000;
-  --dark-text: #fff;
+/* Dark mode */
+--dark-background: #000000;
+--dark-text: #fff;
+/* Light Mode */
+--light-background: #fff;
+--light-text: #000;
 /* Default */
   --background: #fff;
   --text-color: #000;
@@ -51,6 +54,11 @@ body {
 .darkMode {
   --text-color: var(--dark-text);
   --background: var(--dark-background);
+}
+
+.lightMode {
+  --text-color: var(--light-text);
+  --background: var(--light-background);
 }
 
 .main-container {
