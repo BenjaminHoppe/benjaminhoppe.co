@@ -49,7 +49,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 }
 
 body {
-  font-family: 'Px Grotesk';
+  font-family: 'Px Grotesk', sans-serif;
   background-color: var(--background);
 }
 
