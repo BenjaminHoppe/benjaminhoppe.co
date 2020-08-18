@@ -156,12 +156,12 @@ body {
   grid-row: 2 / 2;
 }
 
-a, .mero, .social-link, .email {
+a, .archform, .social-link, .email {
   text-decoration: none;
   color: var(--text-color);
 }
 
-a:visited, .mero:visited, social-link:visited, .email:visited {
+a:visited, .archform:visited, social-link:visited, .email:visited {
   text-decoration: none;
   color: var(--text-color);
   transition: underline 0.4s;
@@ -172,7 +172,7 @@ a:visited, .mero:visited, social-link:visited, .email:visited {
   transition: underline 0.4s;
 }
 
-.mero {
+.archform {
   text-decoration: none;
   background-image: linear-gradient(var(--text-color), var(--text-color));
   background-position: 100% 100%;
@@ -184,17 +184,17 @@ a:visited, .mero:visited, social-link:visited, .email:visited {
   cursor: pointer;
 }
 
-.mero:hover {
+.archform:hover {
   background-size: 100% 100%;
   transition: background-size 250ms ease-in-out;
   color: var(--background);
 }
 
-.mero:visited {
+.archform:visited {
   color: var(--text-color);
 }
 
-.mero:visited:hover {
+.archform:visited:hover {
   color: var(--background);
 }
 
@@ -240,7 +240,7 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .mero:hover, .mero:visited:hover  {
+  .archform:hover, .archform:visited:hover  {
     background-size: 100% 6%;
     color: var(--text-light);
   }
