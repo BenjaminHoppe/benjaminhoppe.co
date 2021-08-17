@@ -169,7 +169,7 @@ a, .archform, .social-link, .email {
   transition: color 0.4s;
 }
 
-a:visited, social-link:visited, .email:visited {
+.social-link:visited, .email:visited {
   text-decoration: none;
   color: var(--text-grey);
   transition: color 0.4s;
