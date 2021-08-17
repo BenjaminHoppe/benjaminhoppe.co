@@ -30,11 +30,13 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
 /* Dark mode */
 --dark-background: #000000;
 --dark-text: #fff;
---dark-grey: #A9A9A9;
+--dark-grey: #8F9BA8;
+/* --dark-grey: #A9A9A9; */
 /* Light Mode */
 --light-background: #fff;
 --light-text: #000;
---light-grey: #A9A9A9;
+--light-grey: #8F9BA8;
+/* --light-grey: #A9A9A9; */
 /* --light-grey: #767676; */
 
 /* Default */
@@ -164,12 +166,12 @@ a, .archform, .social-link, .email {
 a:visited, .archform:visited, social-link:visited, .email:visited {
   text-decoration: none;
   color: var(--text-color);
-  transition: underline 0.4s;
+  transition: color 0.4s;
 }
 
 .social-link:hover, .email:hover {
-  text-decoration: underline;
-  transition: underline 0.4s;
+  color: var(--text-color);
+  transition: color 0.4s;
 }
 
 .archform {
@@ -214,6 +216,8 @@ footer {
 
 .social-link {
   margin-right: 32px;
+  font-size: 16px;
+  color: var(--text-grey);
 }
 
 @media screen and (max-width: 1048px) {
