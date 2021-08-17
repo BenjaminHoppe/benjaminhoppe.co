@@ -163,11 +163,18 @@ a, .archform, .social-link, .email {
   color: var(--text-color);
 }
 
-a:visited, .archform:visited, social-link:visited, .email:visited {
+.archform:visited {
   text-decoration: none;
   color: var(--text-color);
   transition: color 0.4s;
 }
+
+a:visited, social-link:visited, .email:visited {
+  text-decoration: none;
+  color: var(--text-grey);
+  transition: color 0.4s;
+}
+
 
 .social-link:hover, .email:hover {
   color: var(--text-color);
@@ -257,6 +264,10 @@ footer {
 
   .skills-focus, .areas-of-interest {
     margin-top:  48px;
+  }
+
+  .email {
+    margin-right: 0px;
   }
 
   .social-link:hover, .email:hover {
