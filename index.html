@@ -1,117 +1,22 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166988507-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-166988507-1');
-  </script>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="/assets/styles.css">
-  <meta property="og:image" content="assets/hero.png">
-  <meta name="description" content="Digital product designer, front-end developer, based in Toronto.">
+  <link rel="stylesheet" href="/styles.css">
+  <meta property="og:image" content="/og.png">
+  <meta name="description" content="Designer.">
   <meta name="keywords" content="benjamin hoppe, ben hoppe, designer, design, hoppe">
   <meta name="author" content="Benjamin Hoppe">
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Benjamin Hoppe</title>
 </head>
-
-<body class="preload">
-
-  <main class="main-container">
-    <header class="header">
-      <p class="copy"><a class="name" href="/">Benjamin Hoppe</a></p>
-      <span class="toggle" onclick="toggleMode()"></span>
-    </header>
-    <div class="content">
-      <h1 class="heading">Hey, I’m Ben, a product designer currently designing <a class="archform" target="_blank" rel="noopener noreferrer" href="https://archform.co">ArchForm</a> and building <a class="archform" target="_blank" rel="noopener noreferrer" href="https://ora.benjaminhoppe.co">Notion templates</a>.</h1>
-
-      <div class="skills-focus">
-        <p class="sub-heading">Skills and Focus</p>
-        <p class="copy">Art Direction</p>
-        <br>
-        <p class="copy">Branding</p>
-        <br>
-        <p class="copy">Interface Design</p>
-        <br>
-        <p class="copy">User Experience</p>
-        <br>
-        <p class="copy">Web Design</p>
-        <br>
-        <p class="copy">Front-end Web Development</p>
-      </div>
-
-      <div class="areas-of-interest">
-        <p class="sub-heading">Areas of Interest</p>
-        <p class="copy">Architecture</p>
-        <br>
-        <p class="copy">Health tech</p>
-        <br>
-        <p class="copy">Minimalism</p>
-        <br>
-        <p class="copy">Notion</p>
-        <br>
-        <p class="copy">Personal Finance</p>
-        <br>
-        <p class="copy">Remote Work</p>
-      </div>
-    </div>
-
-
-
-    <footer>
-      <div class="socials">
-
-        <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://twitter.com/mrbenjaminhoppe">Twitter</a>
-
-        <a class="social-link" target="_blank" rel="noopener noreferrer" href="https://dribbble.com/benjaminhoppe">Dribbble</a>
-
-      </div>
-
-      <a class="social-link email" href="mailto:benjamin@benjaminhoppe.co">Email me</a>
-    </footer>
-  </main>
+<body>
+  <p>I'm taking a break from being active online to learn more, read more, and design software. If you'd like to reach me, please <a href="mailto:benjamin@benjaminhoppe.co">send me an email</a>.</p>
 </body>
 
 
-<script>
 
-  const toggleMode = () => {
-    let element = document.body;
-    if (element.classList.contains("darkMode")) {
-      element.classList.add("lightMode")
-      element.classList.remove("darkMode")
-    } else {
-      element.classList.add("darkMode")
-      element.classList.remove("lightMode")
-    }
-  }
 
-  const autoDarkMode = window.matchMedia('(prefers-color-scheme: dark)')
 
-  if ("addEventListener" in autoDarkMode) {
-    autoDarkMode.addEventListener('change', e => {
-      document.body.classList.remove("darkMode")
-      document.body.classList.remove("lightMode")
-    });
-  }
-
-  window.addEventListener("load", () => {
-    document.body.classList.remove("preload")
-  })
-
-  // Changes title in tabar when window is innactive
-  // window.onblur = function () { document.title = 'Was it something I said?'; }
-  //
-  // window.onfocus = function () { document.title = 'Benjamin Hoppe | UI/UX Designer & Front-end Developer'; }
-</script>
-
-<!-- <a class="mero" target="_blank" rel="noopener noreferrer"
-href="/">Company</a> -->
 </html>
