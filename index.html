@@ -11,12 +11,86 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Benjamin Hoppe</title>
 </head>
-<body>
-  <p>I'm taking a break from being active online to learn more, read more, and design software. If you'd like to reach me, please <a href="mailto:benjamin@benjaminhoppe.co">send me an email</a>.</p>
+<body onload="startClock()">
+  <div class="sidebar">
+    <div class="name-wrapper">
+      <p class="label-m">Benjamin Hoppe</p>
+      <div class="label-m gray" id="current-time">12:00:00</div>
+    </div>
+
+    <div class="nav-link-collection">
+      <a class="nav-link" href="/">→ Work</a>
+      <p class="nav-link disabled">Archive</p>
+      <p class="nav-link disabled">Blog</p>
+      <p class="nav-link disabled">Contact</p>
+    </div>
+
+    <div class="button-group">
+      <a class="sidebar-button" target="_blank" href="https://twitter.com/mrbenjaminhoppe">
+        <p>Follow me on Twitter</p>
+        <p>↗︎</p>
+      </a>
+      <a class="sidebar-button" href="mailto:benjamin@benjaminhoppe.co">
+        <p>Email me</p>
+        <p>↗︎</p>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="header">
+      <p>Selected Work</p>
+
+      <!-- <span class="toggle" onclick="toggleMode()">
+        <img class="sun" src="/media/sun.svg"/>
+      </span> -->
+    </div>
+    <p>I design & build software with the goal of reducing friction  & creating unique user expierences. Below are some attempts of that in practice.</p>
+
+    <div selected-work>
+      
+    </div>
+  </div>
+
+
+
+
+
+
+
 </body>
 
 
+<script>
 
+// Dark mode toggle
+// function toggleMode() {
+//   var element = document.body;
+//   element.classList.toggle("darkMode",);
+//   console.log("click")
+// }
+
+// $(window).load(function() {
+//   $("body").removeClass("preload");
+// });
+
+// Current time
+const startClock = () => {
+  const now = new Date();
+  const h = padWithZeroes(now.getHours(), 2);
+  const m = padWithZeroes(now.getMinutes(), 2);
+  const s = padWithZeroes(now.getSeconds(), 2);
+  document.getElementById("current-time").innerHTML = `Toronto / ${h}:${m}:${s} (GMT-4)`;
+  setTimeout(startClock, 500);
+};
+
+const padWithZeroes = (input, length) => {
+  let padded = input;
+  if (typeof input !== "string") padded = input.toString();
+  return padded.padStart(length, "0");
+};
+
+</script>
 
 
 </html>

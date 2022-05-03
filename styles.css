@@ -1,18 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('/pp-telegraf/stylesheet.css');
 
 :root {
-  --bg: #ffffff;
-  --text: #1a1a1a;
-  --link: #929DA6;
+  --bg: #000000;
+  --text: #ffffff;
+  --gray: rgba(255,255,255,0.5);
+  --transition: all 0.3s;
 }
 
+/* For light/dark mode */
+/* :root {
+  --bg: #ffffff;
+  --text: #000000;
+  --gray: rgba(0,0,0,0.5);
+  --transition: all 0.3s;
+}
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1a1a1a;
+    --bg: #000000;
     --text: #ffffff;
-    --link: #929DA6;
+    --gray: rgba(255,255,255,0.5);
+    --transition: all 0.3s;
+  }
+
+  .sun {
+    display: none;
+  }
+  
+  .moon {
+    display: block !important;
   }
 }
+
+.sun {
+  display: block;
+}
+
+.moon {
+  display: none;
+}
+
+
+.darkMode {
+  background-color: var(--bg);
+  --bg: #ffffff;
+  --text: #000000;
+  --gray: rgba(0,0,0,0.5);
+  --transition: all 0.3s;
+}
+
+.toggle {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+} */
 
 body, p, a {
   margin: 0;
@@ -23,33 +63,88 @@ body, p, a {
 body {
   background-color: var(--bg);
   color: var(--text);
-  /* font-family: 'Inter', sans-serif; */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'pp_telegrafregular', sans-serif;
   font-weight: normal;
-  height: 100vh;
-  width: 100vw;
   display: flex;
+  flex-direction: row;
 }
 
-p {
-  font-size: 16px;
-  line-height: 175%;
-  max-width: 600px;
-  padding: 24px;
-  margin: auto;
+.sidebar {
+  border-right: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: -webkit-fill-available;
+  max-width: 337px;
+  width: -webkit-fill-available;
 }
 
-a {
-  color: var(--link);
-  opacity: 1;
-  transition: color 0.3s;
+.name-wrapper{
+  padding: 48px;
 }
 
-a:hover {
+.label-m {
+  font-size: 14px; 
+  line-height: 16px;
+}
+
+paragraph-m {
+  font-size: 14px;
+  line-height: 200%;
+}
+
+.gray {
+  color: var(--gray);
+}
+
+#current-time {
+  margin-top: 24px;
+}
+
+.nav-link-collection {
+  padding: 0px 48px;
+}
+
+.nav-link {
+  font-size: 32px;
+  margin-top: 32px;
+}
+
+.nav-link-collection:first-child {
+  margin-top: 0px;
+}
+
+.disabled {
   color: var(--text);
-  transition: color 0.3s;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-a:visited {
-  color: var(--link);
+.sidebar-button {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 32px 48px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--text);
+  cursor:pointer;
+  border-top: 1px solid #222;
+  transition: var(--transition);
+  background-color: transparent;
 }
+
+.sidebar-button:hover {
+  background-color: #222;
+  transition: var(--transition);
+}
+
+.sidebar-button:visited {
+  color: var(--text);
+}
+
+.main-wrapper {
+  max-width: 846px;
+  margin: 48px auto;
+}
+
+
